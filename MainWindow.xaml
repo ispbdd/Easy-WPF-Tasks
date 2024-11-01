@@ -1,0 +1,26 @@
+﻿<Window x:Class="Glad_L3Z8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#1E1E1E" Foreground="#FFFFFF">
+    <Window.Resources>
+        <!-- Стили аналогично предыдущему окну -->
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="20">
+            <DataGrid x:Name="SalaryDataGrid" AutoGenerateColumns="False" HeadersVisibility="Column" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Работник" Binding="{Binding Path=Worker}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Месяц 1" Binding="{Binding Path=Month1, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Месяц 2" Binding="{Binding Path=Month2, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Месяц 3" Binding="{Binding Path=Month3, UpdateSourceTrigger=PropertyChanged}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Посчитать" Click="Calculate_Click" Width="150" Margin="10" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="TotalQuarterSalaryTextBlock" Margin="10"/>
+            <TextBlock x:Name="WorkerQuarterSalaryTextBlock" Margin="10"/>
+            <TextBlock x:Name="MonthlyTotalSalaryTextBlock" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
