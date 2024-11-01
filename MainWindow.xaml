@@ -1,0 +1,23 @@
+﻿<Window x:Class="Glad_L3Z14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Glad_L3Z14"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400" Background="#FF2D2D30">
+    <Grid>
+        <StackPanel Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Введите n:" Foreground="#FFFFFF" FontSize="16" Margin="0,0,0,10"/>
+            <TextBox x:Name="InputN" Width="200" Margin="0,0,0,10" Background="#FF3C3C3C" Foreground="#FFFFFF" BorderBrush="#FFAAAAAA"/>
+            <Button Content="Вычислить 1^1 + 2^2 + … + n^n" 
+                    Width="250" Margin="0,0,0,10" 
+                    Background="#FF007ACC" Foreground="White" FontWeight="Bold"
+                    ToolTip="Click to calculate the sequence sum"
+                    Click="CalculateSecond_Click">
+            </Button>
+            <TextBlock Text="Результат:" Foreground="#FFFFFF" FontSize="16" Margin="0,0,0,5"/>
+            <TextBlock x:Name="ResultText2" FontWeight="Bold" FontSize="14" Foreground="#FFFFFF"/>
+        </StackPanel>
+    </Grid>
+</Window>
