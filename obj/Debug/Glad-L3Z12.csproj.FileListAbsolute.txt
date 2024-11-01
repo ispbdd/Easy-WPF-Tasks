@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\bin\Debug\Glad-L3Z12.exe.config
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\bin\Debug\Glad-L3Z12.exe
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\bin\Debug\Glad-L3Z12.pdb
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12_MarkupCompile.cache
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.g.resources
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad_L3Z12.Properties.Resources.resources
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.exe
+C:\Users\Admin\source\repos\Glad-L3\Glad-L3Z12\obj\Debug\Glad-L3Z12.pdb
