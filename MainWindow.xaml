@@ -1,0 +1,23 @@
+﻿<Window x:Class="Glad_L3Z5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#1E1E1E" Foreground="#FFFFFF">
+    <Window.Resources>
+        <!-- Стили аналогично предыдущему окну -->
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Начальная сумма вклада:" HorizontalAlignment="Left" Margin="10,0,0,5" Foreground="White"/>
+            <TextBox x:Name="InitialDepositTextBox" HorizontalAlignment="Left" Width="200" Margin="10"/>
+            <Label Content="Увеличение превысит:" HorizontalAlignment="Left" Margin="10,0,0,5" Foreground="White"/>
+            <TextBox x:Name="IncreaseThresholdTextBox" HorizontalAlignment="Left" Width="200" Margin="10"/>
+            <Label Content="Вклад превысит:" HorizontalAlignment="Left" Margin="10,0,0,5" Foreground="White"/>
+            <TextBox x:Name="TargetAmountTextBox" HorizontalAlignment="Left" Width="200" Margin="10"/>
+            <Button Content="Рассчитать" HorizontalAlignment="Center" Margin="0,10,0,10" Width="150" Click="Calculate"/>
+            <Label x:Name="ResultLabelGrowth" HorizontalAlignment="Left" Margin="10,0,0,5" Foreground="White"/>
+            <Label x:Name="ResultLabelAmount" HorizontalAlignment="Left" Margin="10,0,0,5" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
