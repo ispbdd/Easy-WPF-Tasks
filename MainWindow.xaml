@@ -1,0 +1,21 @@
+﻿<Window x:Class="Glad_L3Z15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Glad_L3Z15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF1E1E1E">
+    <Grid>
+        <StackPanel Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Введите n:" Foreground="#FFF5F5F5" Margin="0,0,0,10"/>
+            <TextBox x:Name="InputN" Width="200" Margin="0,0,0,10" Background="#FF333333" Foreground="White"/>
+            <Button Content="Найти трехзначные числа по сумме цифр"
+                    Width="250" Margin="0,0,0,10" 
+                    Background="#FF007ACC" Foreground="White" FontWeight="Bold"
+                    Click="FindThreeDigitNumbers_Click"/>
+            <TextBlock Text="Результат:" Foreground="#FFF5F5F5" Margin="0,0,0,5"/>
+            <TextBlock x:Name="ResultText3" FontWeight="Bold" FontSize="14" TextWrapping="Wrap" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
