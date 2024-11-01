@@ -1,0 +1,28 @@
+﻿<Window x:Class="Glad_L3Z11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Glad_L3Z11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF2D2D30">
+    <Grid>
+        <StackPanel Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Введите область (s):" Margin="0,0,0,5" Foreground="White" FontSize="16"/>
+            <TextBox Name="AreaInput" Width="200" Margin="0,0,0,10" Background="#FF3C3C3C" Foreground="White" BorderBrush="#FFAAAAAA"/>
+
+            <Button Content="Вычислить прямоугольники" Width="200" Margin="0,0,0,10" 
+                    Background="#FF007ACC" Foreground="White" FontWeight="Bold" 
+                    Click="CalculateRectangles_Click" ToolTip="Click to calculate rectangles"/>
+            <TextBlock Name="RectangleResults" Margin="0,10,0,20" Foreground="White" FontSize="14" TextWrapping="Wrap"/>
+
+            <TextBlock Text="Введите объем (v):" Margin="0,0,0,5" Foreground="White" FontSize="16"/>
+            <TextBox Name="VolumeInput" Width="200" Margin="0,0,0,10" Background="#FF3C3C3C" Foreground="White" BorderBrush="#FFAAAAAA"/>
+
+            <Button Content="Вычислить параллелепипеды" Width="200" Margin="0,0,0,10" 
+                    Background="#FF007ACC" Foreground="White" FontWeight="Bold"
+                    Click="CalculateParallelepipeds_Click" ToolTip="Click to calculate parallelepipeds"/>
+            <TextBlock Name="ParallelepipedResults" Margin="0,10,0,0" Foreground="White" FontSize="14" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>
