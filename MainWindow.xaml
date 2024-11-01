@@ -1,0 +1,57 @@
+﻿<Window x:Class="Glad_L3Z9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#1E1E1E" Foreground="#FFFFFF">
+
+    <Window.Resources>
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="#282828"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="GridLinesVisibility" Value="All"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+
+            <!-- Цвет выделения -->
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="RowBackground" Value="#333333"/>
+            <Setter Property="AlternatingRowBackground" Value="#2D2D30"/>
+            <Setter Property="SelectedIndex" Value="{Binding SelectedRowIndex, Mode=TwoWay}"/>
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="#FFFFFF"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="DataGridCell">
+            <Style.Triggers>
+                <Trigger Property="DataGridCell.IsSelected" Value="True">
+                    <Setter Property="Background" Value="#007ACC"/>
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="20">
+            <DataGrid x:Name="ScoresDataGrid" AutoGenerateColumns="False" HeadersVisibility="Column" Margin="10"
+                      HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Спортсмен" Binding="{Binding Path=Athlete}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Обязательная" Binding="{Binding Path=Compulsory, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Короткая" Binding="{Binding Path=Short, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Произвольная" Binding="{Binding Path=Free, UpdateSourceTrigger=PropertyChanged}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Content="Посчитать" Click="Calculate_Click" Width="150" Margin="10" HorizontalAlignment="Center"/>
+
+            <TextBlock x:Name="AverageScoresPerAthleteTextBlock" Margin="10"/>
+            <TextBlock x:Name="AverageScoresPerProgramTextBlock" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
