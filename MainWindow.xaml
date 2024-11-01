@@ -1,0 +1,20 @@
+﻿<Window x:Class="Glad_L3Z4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#1E1E1E" Foreground="#FFFFFF">
+    <Window.Resources>
+        <!-- Стили аналогично предыдущему окну -->
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Введите список очков (через запятую):" Margin="10" Foreground="White"/>
+            <TextBox x:Name="ScoresInput" Margin="10" Width="300"/>
+            <Label Content="Введите очки команды N:" Margin="10" Foreground="White"/>
+            <TextBox x:Name="NInput" Margin="10" Width="100"/>
+            <Button Content="Определить место" HorizontalAlignment="Center" Margin="10" Width="150" Click="DetermineRank"/>
+            <Label x:Name="ResultLabel" Margin="10" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
